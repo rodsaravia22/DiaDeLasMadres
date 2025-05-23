@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flores para Nicky 💐</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: #e0f7fa;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .greetings {
+      font-size: 2.5rem;
+      font-weight: 700;
+      max-width: 800px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+      animation: glowMessage 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowMessage {
+      0% {
+        text-shadow: 0 0 5px #00e5ff, 0 0 10px #00e5ff;
+      }
+      100% {
+        text-shadow: 0 0 20px #00e5ff, 0 0 40px #00e5ff;
+      }
+    }
+
+    .botones {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .botones a {
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      color: #00fff0;
+      background: #001f3f;
+      border: 2px solid #00fff0;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .botones a:hover {
+      background: #00fff0;
+      color: #001f3f;
+      transform: scale(1.05);
+    }
+
+    .audio-control {
+      margin-top: 30px;
+    }
+
+    .audio-control audio {
+      width: 100%;
+      max-width: 300px;
+      outline: none;
+    }
+
+    @media (max-width: 600px) {
+      .greetings {
+        font-size: 1.8rem;
+      }
+
+      .botones a {
+        padding: 12px 30px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="greetings">
+    🌸 Señora Daniela, espero que las flores sean de su agrado y que pase un Día de las Madres tan bonito como usted se merece.
+    Con todo mi aprecio, Rodrigo Saravia. 🌸
+  </div>
+
+  <div class="botones">
+    <a href="flower.html">🌺 Ver Flores</a>
+    <a href="https://www.youtube.com/watch?v=Vte7Lg91kzg" target="_blank">💬 Ver Mensaje</a>
+  </div>
+
+  <div class="audio-control">
+    <audio controls autoplay loop>
+      <source src="sound/ChristianBasso&HaienQiu-Flowers.mp3" type="audio/mp3">
+      Tu navegador no soporta el audio :(
+    </audio>
+  </div>
+</body>
+</html>
